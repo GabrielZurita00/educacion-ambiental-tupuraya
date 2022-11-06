@@ -1,0 +1,23 @@
+{
+  "name": "vue-vite-gh-pages-template",
+  "description": "A template for Vue 3 SPAs hosted on GitHub Pages (without the hassle).",
+  "version": "0.0.1",
+  "scripts": {
+    "serve": "pnpm run serve:src",
+    "serve:src": "vite --open",
+    "serve:dist:dev": "pnpx browser-sync ./dist --single --no-notify --no-ui",
+    "build": "pnpm run build:dev",
+    "build:dev": "vite build --base='./' --sourcemap",
+    "build:prod": "vite build --base='/vue-vite-gh-pages-template/'",
+    "version": "bash scripts/version.sh"
+  },
+  "dependencies": {
+    "vue": "3.0.1",
+    "vue-router": "^4.0.0-beta.13"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.0.1",
+    "browser-sync": "^2.26.13",
+    "vite": "^1.0.0-rc.4"
+  }
+}
