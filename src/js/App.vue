@@ -43,3 +43,20 @@
 
   };
 </script>
+
+<style>
+ * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem;
+	height: 100vh;
+}
+</style>

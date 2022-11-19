@@ -25,6 +25,10 @@ const router = createRouter({
       path: '/:catchAll(.*)',
       component: () => import('./routes/Page404.vue'),
     },
+    {
+      path: '/Aire',
+      component: () => import('./routes/Aire.vue'),
+    },
   ],
 });
 
